@@ -34,8 +34,7 @@ const BASE_URL = "https://nilos-bay-mu.vercel.app";
 const PHONE = "01064011110";
 const PHONE_DISPLAY = "010 6401 1110";
 const ADDRESS = "26J9+CFQ, Ad Doqi A, Dokki, Giza Governorate";
-const MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=Nilos+Bay+Dokki+Giza";
+const MAPS_URL = "https://www.google.com/maps/search/?api=1&query=Nilos+Bay+Dokki+Giza";
 
 type Tenant = {
   name: string;
@@ -198,12 +197,8 @@ function Header() {
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/50">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2">
-          <span className="font-display text-xl font-bold text-gradient-gold">
-            Nilos Bay
-          </span>
-          <span className="text-xs uppercase tracking-widest text-muted-foreground">
-            Dokki
-          </span>
+          <span className="font-display text-xl font-bold text-gradient-gold">Nilos Bay</span>
+          <span className="text-xs uppercase tracking-widest text-muted-foreground">Dokki</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
           <a href="#tenants" className="hover:text-foreground transition">
@@ -232,10 +227,7 @@ function Header() {
 
 function Hero() {
   return (
-    <section
-      id="top"
-      className="relative min-h-screen flex items-end overflow-hidden"
-    >
+    <section id="top" className="relative min-h-screen flex items-end overflow-hidden">
       <img
         src={heroImg}
         alt="Egyptian feast on the Nile at sunset at Nilos Bay"
@@ -247,17 +239,15 @@ function Hero() {
       <div className="relative mx-auto max-w-7xl px-6 pb-20 pt-32 w-full">
         <div className="max-w-3xl animate-float-up">
           <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-background/40 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-gold backdrop-blur">
-            <Star className="h-3.5 w-3.5 fill-gold" /> 4.6 · 39 Reviews · Open
-            24 hours
+            <Star className="h-3.5 w-3.5 fill-gold" /> 4.6 · 39 Reviews · Open 24 hours
           </div>
           <h1 className="mt-6 font-display text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.05]">
             A taste of the <span className="text-gradient-gold">Nile</span>,
             <br /> any time you crave it.
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl">
-            Nilos Bay is Dokki's all-day Nile-side food court — sizzling grills,
-            soulful Egyptian classics and Mediterranean mezze, served until
-            sunrise.
+            Nilos Bay is Dokki's all-day Nile-side food court — sizzling grills, soulful Egyptian
+            classics and Mediterranean mezze, served until sunrise.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -278,8 +268,7 @@ function Hero() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-gold/50 bg-background/50 backdrop-blur px-7 py-3.5 text-base font-semibold text-gold hover:bg-background/80 transition"
             >
-              <MessageCircle className="h-4 w-4" /> Contact Us ·{" "}
-              {PHONE_DISPLAY}
+              <MessageCircle className="h-4 w-4" /> Contact Us · {PHONE_DISPLAY}
             </a>
             <a
               href="#feedback"
@@ -325,17 +314,14 @@ function Tenants() {
     <section id="tenants" className="mx-auto max-w-7xl px-6 py-24">
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
         <div>
-          <p className="text-sm uppercase tracking-[0.3em] text-gold">
-            Inside the Bay
-          </p>
+          <p className="text-sm uppercase tracking-[0.3em] text-gold">Inside the Bay</p>
           <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold">
-            Nine venues.{" "}
-            <span className="text-gradient-gold">One Nile-side address.</span>
+            Nine venues. <span className="text-gradient-gold">One Nile-side address.</span>
           </h2>
         </div>
         <p className="text-muted-foreground max-w-md">
-          Café crawls, long dinners, late-night bowling and sunset boat rides —
-          all under the lights of Nilos Bay.
+          Café crawls, long dinners, late-night bowling and sunset boat rides — all under the lights
+          of Nilos Bay.
         </p>
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -360,9 +346,7 @@ function Tenants() {
             </div>
             <div className="p-5 flex-1 flex flex-col">
               <h3 className="font-display text-xl font-semibold">{t.name}</h3>
-              <p className="mt-2 text-sm text-muted-foreground flex-1">
-                {t.desc}
-              </p>
+              <p className="mt-2 text-sm text-muted-foreground flex-1">{t.desc}</p>
               <a
                 href={t.instagram}
                 target="_blank"
@@ -380,11 +364,9 @@ function Tenants() {
           href={`tel:${PHONE}`}
           className="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-8 py-3.5 font-semibold text-primary-foreground shadow-gold hover:scale-[1.03] transition"
         >
-<<<<<<< HEAD
           <Phone className="h-4 w-4" /> Reserve · {PHONE_DISPLAY}
-=======
           <Phone className="h-4 w-4" /> Call Us · {PHONE_DISPLAY}
->>>>>>> 6959d78 (first commit)
+          6959d78 (first commit)
         </a>
       </div>
     </section>
@@ -405,26 +387,21 @@ function Experience() {
             className="rounded-3xl shadow-elegant object-cover aspect-[4/3]"
           />
           <div className="absolute -bottom-6 -right-6 hidden md:block rounded-2xl bg-card border border-border/60 px-6 py-4 shadow-gold">
-            <div className="text-3xl font-display font-bold text-gold">
-              8,500+
-            </div>
+            <div className="text-3xl font-display font-bold text-gold">8,500+</div>
             <div className="text-xs uppercase tracking-widest text-muted-foreground">
               Monthly visitors
             </div>
           </div>
         </div>
         <div>
-          <p className="text-sm uppercase tracking-[0.3em] text-gold">
-            The Experience
-          </p>
+          <p className="text-sm uppercase tracking-[0.3em] text-gold">The Experience</p>
           <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold leading-tight">
             Where Cairo nights meet the river breeze.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
-            Nilos Bay brings together nine independent venues — from morning
-            coffee at Kim's and Second Cup, to dinner at Wardah, Nilerra and
-            Darnoura, drinks at Mokhito, burgers at Uncle Zack, bowling with
-            friends and a private boat ride on the Nile with Abaza Boats.
+            Nilos Bay brings together nine independent venues — from morning coffee at Kim's and
+            Second Cup, to dinner at Wardah, Nilerra and Darnoura, drinks at Mokhito, burgers at
+            Uncle Zack, bowling with friends and a private boat ride on the Nile with Abaza Boats.
           </p>
           <ul className="mt-8 space-y-4">
             {[
@@ -501,21 +478,17 @@ function GuestList() {
     <section id="feedback" className="border-y border-border/60">
       <div className="mx-auto max-w-7xl px-6 py-24 grid lg:grid-cols-5 gap-12 items-start">
         <div className="lg:col-span-2">
-          <p className="text-sm uppercase tracking-[0.3em] text-gold">
-            Feedback Form
-          </p>
+          <p className="text-sm uppercase tracking-[0.3em] text-gold">Feedback Form</p>
           <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold leading-tight">
             We'd love your <span className="text-gradient-gold">feedback</span>.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
-            We genuinely care about your experience and would love to hear your
-            feedback. Your review helps us improve and continue delivering the
-            level of service our guests deserve.
+            We genuinely care about your experience and would love to hear your feedback. Your
+            review helps us improve and continue delivering the level of service our guests deserve.
           </p>
           <p className="mt-4 text-lg text-muted-foreground">
-            Drop your details and we'll keep you updated - priority seating,
-            event invites, and first dibs on Nile boat rides. We only message
-            about Nilos Bay; never spam.
+            Drop your details and we'll keep you updated - priority seating, event invites, and
+            first dibs on Nile boat rides. We only message about Nilos Bay; never spam.
           </p>
           <ul className="mt-8 space-y-3 text-foreground">
             {[
@@ -535,12 +508,10 @@ function GuestList() {
               <div className="mx-auto h-14 w-14 rounded-full bg-gradient-gold flex items-center justify-center text-primary-foreground">
                 <CheckCircle2 className="h-7 w-7" />
               </div>
-              <h3 className="mt-6 font-display text-2xl font-semibold">
-                You're on the list.
-              </h3>
+              <h3 className="mt-6 font-display text-2xl font-semibold">You're on the list.</h3>
               <p className="mt-3 text-muted-foreground max-w-md mx-auto">
-                Thanks for joining! We'll WhatsApp you soon. Meanwhile, explore
-                the venues or message us directly.
+                Thanks for joining! We'll WhatsApp you soon. Meanwhile, explore the venues or
+                message us directly.
               </p>
               <div className="mt-6 flex flex-wrap gap-3 justify-center">
                 <a
@@ -569,9 +540,7 @@ function GuestList() {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium mb-2">
-                    Full Name *
-                  </label>
+                  <label className="block text-sm font-medium mb-2">Full Name *</label>
                   <input
                     required
                     type="text"
@@ -582,9 +551,7 @@ function GuestList() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">
-                    Phone (WhatsApp) *
-                  </label>
+                  <label className="block text-sm font-medium mb-2">Phone (WhatsApp) *</label>
                   <input
                     required
                     type="tel"
@@ -596,9 +563,7 @@ function GuestList() {
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">
-                  Email (optional)
-                </label>
+                <label className="block text-sm font-medium mb-2">Email (optional)</label>
                 <input
                   type="email"
                   value={form.email}
@@ -608,27 +573,19 @@ function GuestList() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">
-                  Visit Date
-                </label>
+                <label className="block text-sm font-medium mb-2">Visit Date</label>
                 <input
                   type="date"
                   value={form.visit_date}
-                  onChange={(e) =>
-                    setForm({ ...form, visit_date: e.target.value })
-                  }
+                  onChange={(e) => setForm({ ...form, visit_date: e.target.value })}
                   className={inputClass}
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">
-                  Your Experience At
-                </label>
+                <label className="block text-sm font-medium mb-2">Your Experience At</label>
                 <select
                   value={form.venue_interest}
-                  onChange={(e) =>
-                    setForm({ ...form, venue_interest: e.target.value })
-                  }
+                  onChange={(e) => setForm({ ...form, venue_interest: e.target.value })}
                   className={inputClass}
                 >
                   <option value="">Choose a venue (optional)</option>
@@ -641,9 +598,7 @@ function GuestList() {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">
-                  Your Feedback
-                </label>
+                <label className="block text-sm font-medium mb-2">Your Feedback</label>
                 <textarea
                   rows={3}
                   value={form.notes}
@@ -652,9 +607,7 @@ function GuestList() {
                   className={inputClass}
                 />
               </div>
-              {status === "error" && (
-                <p className="text-sm text-destructive">{errorMsg}</p>
-              )}
+              {status === "error" && <p className="text-sm text-destructive">{errorMsg}</p>}
               <button
                 type="submit"
                 disabled={status === "loading"}
@@ -671,8 +624,7 @@ function GuestList() {
                 )}
               </button>
               <p className="text-xs text-muted-foreground text-center">
-                By submitting, you agree to receive occasional WhatsApp updates
-                from Nilos Bay.
+                By submitting, you agree to receive occasional WhatsApp updates from Nilos Bay.
               </p>
             </form>
           )}
@@ -687,15 +639,11 @@ function Visit() {
     <section id="visit" className="bg-card/40 border-y border-border/60">
       <div className="mx-auto max-w-7xl px-6 py-24 grid md:grid-cols-3 gap-8">
         <div className="md:col-span-1">
-          <p className="text-sm uppercase tracking-[0.3em] text-gold">
-            Visit Us
-          </p>
-          <h2 className="mt-3 font-display text-4xl font-bold">
-            Plan your visit
-          </h2>
+          <p className="text-sm uppercase tracking-[0.3em] text-gold">Visit Us</p>
+          <h2 className="mt-3 font-display text-4xl font-bold">Plan your visit</h2>
           <p className="mt-4 text-muted-foreground">
-            We're easy to find on the Nile in Dokki. Walk in, or call ahead —
-            your table (or your takeaway bag) will be ready.
+            We're easy to find on the Nile in Dokki. Walk in, or call ahead — your table (or your
+            takeaway bag) will be ready.
           </p>
         </div>
         <div className="md:col-span-2 grid sm:grid-cols-2 gap-4">
@@ -706,11 +654,7 @@ function Visit() {
             cta="Get Directions"
             href={MAPS_URL}
           />
-          <InfoCard
-            icon={Clock}
-            title="Hours"
-            lines={["Open 24 hours", "7 days a week"]}
-          />
+          <InfoCard icon={Clock} title="Hours" lines={["Open 24 hours", "7 days a week"]} />
           <InfoCard
             icon={MessageCircle}
             title="Contact Us"
@@ -776,12 +720,8 @@ function Footer() {
     <footer className="border-t border-border/60">
       <div className="mx-auto max-w-7xl px-6 py-12 flex flex-col md:flex-row gap-6 items-center justify-between">
         <div>
-          <div className="font-display text-2xl font-bold text-gradient-gold">
-            Nilos Bay
-          </div>
-          <p className="text-sm text-muted-foreground mt-1">
-            Nile-side food court · Dokki, Giza
-          </p>
+          <div className="font-display text-2xl font-bold text-gradient-gold">Nilos Bay</div>
+          <p className="text-sm text-muted-foreground mt-1">Nile-side food court · Dokki, Giza</p>
         </div>
         <div className="text-sm text-muted-foreground">
           © {new Date().getFullYear()} Nilos Bay. All rights reserved.
