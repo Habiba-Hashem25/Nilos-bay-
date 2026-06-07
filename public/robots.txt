@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /404
+
+# Sitemaps
+Sitemap: https://nilos-bay-mu.vercel.app/sitemap.xml
+
+# Crawl delay for polite bots
+Crawl-Delay: 10
+
+# Host directive
+Host: https://nilos-bay-mu.vercel.app
