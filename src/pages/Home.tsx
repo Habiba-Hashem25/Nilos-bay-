@@ -11,6 +11,7 @@ import inLaneImg from "@/assets/inlane.jpg";
 import abazaImg from "@/assets/abaza.jpg";
 import { Phone, MapPin, Clock, Star, Utensils, Coffee, Music, Ship, Instagram, ArrowRight, Sparkles, MessageCircle, ClipboardList, Loader2, CheckCircle2, Home } from "lucide-react";
 import { useState } from "react";
+import { supabase } from "@/lib/supabase";
 
 
 
